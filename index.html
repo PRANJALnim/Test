@@ -7,183 +7,125 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-      }
-
-      #vanta-container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-      }
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        /* background-color: rgb(0, 0, 35); */
-        color: rgb(247, 247, 247);
-        cursor: none;
-        max-width: 100vw;
-      }
-      nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 80px;
-        background-color: rgba(24, 24, 24, 0.276);
-        cursor: none;
-      }
-      nav ul {
-        display: flex;
-        justify-content: center;
-        /* z-index: 1; */
-      }
-      nav ul li a {
-        text-decoration: none;
-        color: white;
-        font-size: 1.2rem;
-        transition: all 0.2s;
-        cursor: none;
-      }
-      nav ul li a:hover {
-        color: rgb(98, 98, 201);
-        font-size: 1.4rem;
-      }
-      nav ul li {
-        list-style: none;
-        margin: 0 23px;
-      }
-      .left {
-        font-size: 1.5rem;
-      }
-      .firstsection {
-        margin: 60px 0;
-        display: flex;
-        justify-content: space-around;
-        min-height: 80vh;
-        /* margin: 23px 0; */
-      }
-      .firstsection > div {
-        width: 34%;
-      }
-      .leftsection > div {
-        display: inline-block;
-      }
-      .leftsection {
-        /* background-color: red; */
-        font-size: 4rem;
-        display: flex;
-        margin-bottom: 20vh;;
-        align-items: center;
-        justify-content: center;
-      }
-      .rightsection{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .content{
-        scale:2;
-      }
-      .rightsection img {
-        width: 110%;
-        animation-name: animat-1;
-        animation-duration: 4s;
-        animation-iteration-count: 100;
-        animation-timing-function: ease-in-out;
-      }
-      .purple {
-        color: rgb(255, 255, 255);
-      }
-      .secondsection{
-        max-width: 80vh;
-        display: flex;
-      }
-      hr{
-        border: none;
-        background-color: rgb(66, 66, 98);
-        border-radius: 50px;
-        height:4px;
-        margin:0 1%;
-      }
-      @keyframes animat-1 {
-        0%{
-          margin-top: 0px;
-        }
-        50%{
-          margin-top:30px;
-        }
-        100%{
-          margin-top: 0px;
-        }
-      }
-      @media (max-width: 1000px) {
-        body{
-          display:none;
-        }
-        .hidden{
-          display: inline;
-        }
-      }
-    </style>
-    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
   </head>
   <body>
     <div id="vanta-container"></div>
-    <div class="hidden" style="display: none;"></div>
+    <div class="hidden" style="display: none"></div>
     <header>
-      <nav>
+      <nav class="sticky" id="nav">
         <div class="left">Pranjal's Portfolio</div>
         <div class="right">
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Services</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">Contact Me</a></li>
+            <li><a href="#home" id="">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <section class="firstsection " id="ele">
+      <section class="firstsection" id="home">
         <div class="leftsection">
           <div>
             Hi, My name is <spam class="purple"><b>Pranjal</b></spam>
             <div>I'm a <span id="element" class="purple"></span></div>
-            
+
+            <div class="buttons">
+              <button class="but">Downolad Resume</button>
+              <a href="mailto:pranjalnimbodiya360@gmail.com">
+                <button class="but">Contact Me</button>
+              </a>
+            </div>
           </div>
         </div>
         <div class="rightsection">
           <!-- <img src="dev.png" alt="" /> -->
           <div class="content">
             <!-- content -->
-        </div>
+          </div>
         </div>
       </section>
-      <hr>
-      <section class="secondsection">
-        Previous Experiance
+      <hr />
+      <section class="secondsection" id="about">
+        <div class="divSec" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+          <span> About Me </span>
+          <hr />
+          <div class="aboutText">
+            <p>
+              I am Pranjal Nimbodiya, a skilled front-end developer with
+              experience in HTML, CSS, JavaScript, Bootstrap, and jQuery.
+              Currently, I am expanding my skill set by learning Unity and the
+              Vuforia engine for augmented reality (AR) development. I am also
+              deeply interested in exploring the field of virtual reality (VR)
+              development.
+            </p>
+            <p>
+              In addition to my technical expertise, I have recently completed
+              my training in UI/UX design, where I have gained a solid
+              understanding of creating visually appealing and user-friendly
+              interfaces. With this knowledge, I can now confidently design
+              intuitive user experiences that enhance website usability.
+            </p>
+            <p>
+              As a fast learner, team player, and problem-solver, I thrive in
+              dynamic environments where I can apply my skills and adapt to new
+              technologies. My goal is to contribute to innovative projects and
+              create visually appealing and interactive websites that deliver
+              exceptional user experiences.
+            </p>
+            <p>
+              I am always eager to stay updated with the latest technologies and
+              trends in the industry, as it allows me to continuously improve my
+              skills and bring fresh ideas to the table. If you have any
+              questions or need assistance in front-end development, AR, VR, or
+              UI/UX design, please feel free to reach out. I'm excited to be a
+              part of cutting-edge projects and contribute to the advancement of
+              technology.
+            </p>
+          </div>
+        </div>
+      </section>
+<hr>
+      <section class="lastsection" id="contact">
+        <div
+          class="divSec"
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.8"
+        >
+        <span class="head">Contact Me</span>
+        <div class="logos">
+          <a href="" class="linkedin">
+            <img src="linkedin.png" alt="" >
+            Linkedin
+          </a>
+        </div>
+      </div>
       </section>
     </main>
 
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/kursor"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
     <!-- for TypeJs -->
     <script>
       var typed = new Typed("#element", {
@@ -200,24 +142,71 @@
           "<b>Web Developer.</b>",
           "<b>XR Developer.</b>",
           "<b>UI/UX Developer.</b>",
+          "<b>Web Developer.</b>",
+          "<b>XR Developer.</b>",
+          "<b>UI/UX Developer.</b>",
+          "<b>Web Developer.</b>",
+          "<b>XR Developer.</b>",
+          "<b>UI/UX Developer.</b>",
+          "<b>Web Developer.</b>",
+          "<b>XR Developer.</b>",
+          "<b>UI/UX Developer.</b>",
+          "<b>Web Developer.</b>",
+          "<b>XR Developer.</b>",
+          "<b>UI/UX Developer.</b>",
+          "<b>Web Developer.</b>",
+          "<b>XR Developer.</b>",
+          "<b>UI/UX Developer.</b>",
+          "<b>Web Developer.</b>",
+          "<b>XR Developer.</b>",
+          "<b>UI/UX Developer.</b>",
+          "<b>Web Developer.</b>",
+          "<b>XR Developer.</b>",
+          "<b>UI/UX Developer.</b>",
+          "<b>Web Developer.</b>",
+          "<b>XR Developer.</b>",
+          "<b>UI/UX Developer.</b>",
+          "<b>Web Developer.</b>",
+          "<b>XR Developer.</b>",
+          "<b>UI/UX Developer.</b>",
+          "<b>Web Developer.</b>",
+          "<b>XR Developer.</b>",
+          "<b>UI/UX Developer.</b>",
+          "<b>Web Developer.</b>",
+          "<b>XR Developer.</b>",
+          "<b>UI/UX Developer.</b>",
+          "<b>Web Developer.</b>",
+          "<b>XR Developer.</b>",
+          "<b>UI/UX Developer.</b>",
+          "<b>Web Developer.</b>",
+          "<b>XR Developer.</b>",
+          "<b>UI/UX Developer.</b>",
+          "<b>Web Developer.</b>",
+          "<b>XR Developer.</b>",
+          "<b>UI/UX Developer.</b>",
+          "<b>Web Developer.</b>",
+          "<b>XR Developer.</b>",
+          "<b>UI/UX Developer.</b>",
+          "<b>Web Developer.</b>",
+          "<b>XR Developer.</b>",
+          "<b>UI/UX Developer.</b>",
         ],
         typeSpeed: 90,
       });
     </script>
+
     <script src="https://unpkg.com/kursor"></script>
     <script>
-        new kursor({
-            color:"rgb(255,255,255)",
-            type: 4
-        })
+      new kursor({
+        color: "rgb(255,255,255)",
+        type: 4,
+      });
     </script>
-
-<!-- <div id="your-element-selector"style="width: 100px;height:100px;"></div> -->
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+
     <script>
-      document.addEventListener("DOMContentLoaded", function() {
+      document.addEventListener("DOMContentLoaded", function () {
         VANTA.TOPOLOGY({
           el: "#vanta-container",
           mouseControls: true,
@@ -228,23 +217,58 @@
           scale: 1.0,
           scaleMobile: 1.0,
           color: 0xd3e7ff,
-          backgroundColor: 0x313
+          backgroundColor: 0x313,
         });
       });
     </script>
 
-<script src="https://cdn.jsdelivr.net/npm/kursor"></script>
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-<script type="text/javascript" src="tagcloud.min.js"></script>
-<script>
-  var texts = [
-      'Blender 3D', 'C++', 'JavaScript',
-      'CSS3', 'Animation', 'UI/UX Development',
-      'XR Development', 'AR',
-      'NodeJS', 'ExpressJS','Bootstrap','VantaJS'
-  ];
-  var tc = TagCloud('.content', texts);
-  console.log(tc);
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/kursor"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script type="text/javascript" src="tagcloud.min.js"></script>
+
+    <script>
+      var texts = [
+        "Blender 3D",
+        "C++",
+        "JavaScript",
+        "CSS3",
+        "Animation",
+        "UI/UX Development",
+        "XR Development",
+        "AR",
+        "NodeJS",
+        "ExpressJS",
+        "Bootstrap",
+        "VantaJS",
+      ];
+      var tc = TagCloud(".content", texts);
+      console.log(tc);
+    </script>
+    <script>
+      window.addEventListener("scroll", function () {
+        var nav = document.querySelector("nav");
+        if (window.scrollY > 0) {
+          nav.classList.add("sticky");
+        } else {
+          nav.classList.remove("sticky");
+        }
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="vanilla-tilt.js"></script>
   </body>
 </html>
