@@ -93,6 +93,9 @@
         align-items: center;
         justify-content: center;
       }
+      .content{
+        scale:2;
+      }
       .rightsection img {
         width: 110%;
         animation-name: animat-1;
@@ -163,7 +166,10 @@
           </div>
         </div>
         <div class="rightsection">
-          <img src="dev.png" alt="" />
+          <!-- <img src="dev.png" alt="" /> -->
+          <div class="content">
+            <!-- content -->
+        </div>
         </div>
       </section>
       <hr>
@@ -229,6 +235,16 @@
 
 <script src="https://cdn.jsdelivr.net/npm/kursor"></script>
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
+<script type="text/javascript" src="tagcloud.min.js"></script>
+<script>
+  var texts = [
+      'Blender 3D', 'C++', 'JavaScript',
+      'CSS3', 'Animation', 'UI/UX Development',
+      'XR Development', 'AR',
+      'NodeJS', 'ExpressJS','Bootstrap','VantaJS'
+  ];
+  var tc = TagCloud('.content', texts);
+  console.log(tc);
+</script>
   </body>
 </html>
