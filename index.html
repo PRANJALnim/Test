@@ -36,8 +36,8 @@
             <li><a href="#home" id="">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#Services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact Me</a></li>
           </ul>
         </div>
       </nav>
@@ -109,25 +109,95 @@
           </div>
         </div>
       </section>
-<hr>
-      <section class="lastsection" id="contact">
-        <div
-          class="divSec"
+      <section class="secondsection" id="Services">
+        <!-- <div class="divSec" data-tilt data-tilt-glare data-tilt-max-glare="0.8"> -->
+          <div class="divSec" 
           data-tilt
-          
           data-tilt-glare
-          data-tilt-max-glare="0.8"
-        >
-        <span class="head">Contact Me</span>
-        <div class="logos">
-          <a href="" class="linkedin">
-            <img src="linkedin.png" alt="" >
-            Linkedin
-          </a>
+          data-tilt-max-glare="0.8">
+          <!-- <div class="divSec" data-tilt> -->
+          <span> Services </span>
+          <hr />
+          <div class="aboutText">
+            <p>
+              As a skilled front-end developer with expertise in HTML, CSS, JavaScript, Bootstrap, and jQuery, I am committed to creating modern, responsive, and user-friendly interfaces for websites and mobile apps. With my recent training in UI/UX design, I can seamlessly integrate user-centric principles into your projects, ensuring visually appealing and intuitive experiences for your visitors.
+            </p>
+<p>
+  My services include:
+</p>
+<ol>
+  <li>
+    Front-end Development: Transforming your design concepts into fully functional and interactive websites with clean and optimized code.
+  </li>
+  <li>
+    Responsive Design: Ensuring your website looks stunning and functions flawlessly across various devices and screen sizes.
+  </li>
+  <li>
+    Performance Optimization: Fine-tuning your website for fast load times and smooth navigation, enhancing user satisfaction.
+  </li>
+  <li>
+    Cross-Browser Compatibility: Testing and ensuring your website works consistently on all major web browsers.
+  </li>
+</ol>
+<p>
+  I'm constantly staying updated with the latest technologies and trends in the industry, allowing me to bring fresh ideas and cutting-edge solutions to your projects.
+</p>
+<p>
+  If you need assistance in front-end development or want to create visually appealing and user-friendly interfaces, I'm here to help. Check out my UI/UX design gig to explore my expertise in creating engaging experiences for your website and mobile apps using the principles of user research, wireframing, custom visuals, and prototyping.
+</p>
+<p>
+  [Front-end Development Gig]
+</p>
+<p>
+  [UI/UX Design Gig]
+</p>
+
+<p>
+  Let's collaborate and create exceptional digital experiences together! Feel free to reach out with any questions or project inquiries. I'm excited to be a part of your journey towards success.
+</p>
+</div>
+</div>
+</section>
+<section class="secondsection" id="Projects">
+  <!-- <div class="divSec" data-tilt data-tilt-glare data-tilt-max-glare="0.8"> -->
+    <div class="divSec" 
+    data-tilt
+    data-tilt-glare
+    data-tilt-max-glare="0.8">
+    <!-- <div class="divSec" data-tilt> -->
+    <span> Projects </span>
+    <hr />
+    <div class="aboutText">
+      <div class="grid-container">
+        <!-- <div class="grid-item"> -->
+          <!-- </div> -->
+          
+          <div class="grid-item">
+          <img class="grid-item" src="render-1.png" alt="">
+
         </div>
-      </div>
-      </section>
-    </main>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+    </div>
+  </div>
+</section>
+<section class="secondsection" id="Contact">
+  <!-- <div class="divSec" data-tilt data-tilt-glare data-tilt-max-glare="0.8"> -->
+    <div class="divSec" 
+    data-tilt
+    data-tilt-glare
+    data-tilt-max-glare="0.8">
+    <!-- <div class="divSec" data-tilt> -->
+    <span> Contact Me </span>
+    <hr />
+    
+</section>
+<!-- <section class="secondsection" id="Services"> -->
+<hr>
 
     <script src="https://cdn.jsdelivr.net/npm/kursor"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -294,5 +364,22 @@
       crossorigin="anonymous"
     ></script>
     <script src="vanilla-tilt.js"></script>
+
+
+    <script>
+      var pageLink = window.location.href;
+var pageTitle = String(document.title).replace(/\&/g, '%26');
+
+function fbs_click() { window.open(`http://www.facebook.com/sharer.php?u=${pageLink}&quote=${pageTitle}`,'sharer','toolbar=0,status=0,width=626,height=436');return false; }
+      
+function tbs_click() { window.open(`https://twitter.com/intent/tweet?text=${pageTitle}&url=${pageLink}`,'sharer','toolbar=0,status=0,width=626,height=436');return false; }
+
+function lbs_click() { window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${pageLink}`,'sharer','toolbar=0,status=0,width=626,height=436');return false; }
+
+function rbs_click() { window.open(`https://www.reddit.com/submit?url=${pageLink}`,'sharer','toolbar=0,status=0,width=626,height=436');return false; }
+
+function pbs_click() { window.open(`https://www.pinterest.com/pin/create/button/?&text=${pageTitle}&url=${pageLink}&description=${pageTitle}`,'sharer','toolbar=0,status=0,width=626,height=436');return false; }
+
+    </script>
   </body>
 </html>
